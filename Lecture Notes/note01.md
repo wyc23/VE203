@@ -12,7 +12,7 @@ common number sets like natural number, real number and so on.
 
 ### cardinality
 
-The size of a set is called its cardinality, denoted by $|A|$, $\#A$ or $card A$.
+The size of a set is called its cardinality, denoted by $|A|$ or $card A$.
 
 > note that a set is either a finite set or an infinite set.
 
@@ -23,10 +23,10 @@ The size of a set is called its cardinality, denoted by $|A|$, $\#A$ or $card A$
 - proper subset/superset
 - union
   we denote the union of a collection of sets $\mathcal{C}$ as
-  $$\bigcup\mathcal{C} = \{x|\exist X \in \mathcal{C} \space s.t. \space x \in X \} = \bigcup\{X|X \in \mathcal{C}\} = \bigcup_{X \in \mathcal{C}} X$$
+  $$\bigcup\mathcal{C} = \lbrace x|\exists X \in \mathcal{C} \space s.t. \space x \in X \rbrace = \bigcup\lbrace X|X \in \mathcal{C}\rbrace = \bigcup_{X \in \mathcal{C}} X$$
 - intersection
   We denote the intersection of a nonempty collection of sets $\mathcal{C}$ as
-  $$\bigcap \mathcal{C} = \{x|\forall X \in \mathcal{C} \space s.t. \space x \in X\} = \bigcap \{X|X \in \mathcal{C}\} = \bigcap_{X \in \mathcal{C}} X$$
+  $$\bigcap \mathcal{C} = \lbrace x|\forall X \in \mathcal{C} \space s.t. \space x \in X\rbrace = \bigcap \lbrace X|X \in \mathcal{C}\rbrace = \bigcap_{X \in \mathcal{C}} X$$
 
   > note that $\bigcap \emptyset$ is undefined
 - set difference
@@ -55,13 +55,13 @@ The size of a set is called its cardinality, denoted by $|A|$, $\#A$ or $card A$
 
 The Cartesian product of set A and B is the set of **ordered pairs**, such that
 
-$$A \times B = \{(a,b)|a \in A, b \in B\}$$
+$$A \times B = \lbrace (a,b)|a \in A, b \in B \rbrace$$
 
 ### definition of ordered pair
 
 An ordered pair (a,b) is defined as
 
-$$(a,b) := \{\{a\},\{a,b\}\}$$
+$$(a,b) := \lbrace\lbrace a \rbrace,\lbrace a,b \rbrace\\rbrace$$
 
 ### theorem
 
@@ -84,12 +84,9 @@ The n-fold Cartesian product $A_1 \times A_2 \times \cdot \cdot \cdot \times A_n
 
 ### k-element subsets
 
-Let $X$ be a finite set. For positive integer $k$, let $\begin{pmatrix}X\\k\\
-\end{pmatrix}$ denotes the set of all k-element subsets.
+Let $X$ be a finite set. For positive integer $k$, let $X \choose k$ denotes the set of all k-element subsets.
 
-> note that $\Big\lvert\begin{pmatrix}X\\k\\
-\end{pmatrix}\Big\rvert$ = $\begin{pmatrix}|X|\\k\\
-\end{pmatrix}$
+> note that $\lvert {X \choose k} \rvert$ = $|X| \choose k$.
 
 ### definition of simple graph
 
