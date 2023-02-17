@@ -37,11 +37,11 @@ Disjunctive Normal Form (DNF) is a disjunction of one or more clauses, where a c
 
 ### theorem of DNF
 
-For any proposition $\varphi$, there is a proposition ${\varphi}_{dnf}$ over the same Boolean variables and in DNF such that $\varphi \Leftrightarrow {\varphi}_{dnf}$.
+For any proposition $\varphi$, there is a proposition $\varphi_{dnf}$ over the same Boolean variables and in DNF such that $\varphi \Leftrightarrow \varphi_{dnf}$.
 
 ### theorem of CNF
 
-For any proposition $\varphi$, there is a proposition ${\varphi}_{cnf}$ over the same Boolean variables and in CNF such that $\varphi \Leftrightarrow {\varphi}_{cnf}$.
+For any proposition $\varphi$, there is a proposition $\varphi_{cnf}$ over the same Boolean variables and in CNF such that $\varphi \Leftrightarrow \varphi_{cnf}$.
 
 ## Conditional statement
 
