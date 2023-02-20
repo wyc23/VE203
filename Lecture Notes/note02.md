@@ -239,7 +239,7 @@ Since there are too many contents, I just post a picture from Runze Cai's slide:
 
 If the domain of the universal quantifier is the empty set, then the statement:
 
-$$(\forall c \in M)A(x)$$
+$$(\forall x \in M)A(x)$$
 
 is always true regardless of the predicate $A(x)$, $A(x)$ is vacuously true.
 
