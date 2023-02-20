@@ -197,3 +197,52 @@ Consider a finite set of primes $\lbrace p_1, ..., p_k \rbrace$. Let $N = p_1p_2
 - or N is not a prime, so N must admit a prime factor, which is not in $\lbrace p_1, ..., p_k \rbrace$. Call this new prime $p_{k+1}$.
 
 In this way, we can always generate a new prime from a finite set of primes.
+
+## Method of truth tree
+
+For more detail of this method, please refer to this [link](https://homepages.hass.rpi.edu/heuveb/Teaching/Logic/CompLogic/Web/Presentations/TF-Trees.pdf).
+
+## Statement
+
+For a statement, the first part is a quantifier, the second part is a statement form or predicate.
+
+### definition of predicate
+
+A function $P:X \to \lbrace \top, \bot \rbrace$ is called a predicate on its domain $X$.
+
+> Note that a statement form becomes a statement when the variable takes specific value
+
+## Logical quantifiers
+
+- universal quantifier: $\forall$, "for all"
+- existential quantifier: $\exists$, "there exists"
+
+### contraposition and negation of quantifiers
+
+$\neg (\forall x \in M: A(x)) \Leftrightarrow \exists x \in M: \neg A(x)$
+
+### de morgan's law for quantifiers
+
+Just remember, when taking the negation,
+
+$\exists \to \forall$
+
+$\wedge \to \vee$
+
+## Theorem in predicate logic
+
+Since there are too many contents, I just post a picture from Runze Cai's slide:
+
+![pic2_1](../assets/Theorem_in_predicate_logic.png)
+
+## Vacuous truth
+
+If the domain of the universal quantifier is the empty set, then the statement:
+
+$$(\forall c \in M)A(x)$$
+
+is always true regardless of the predicate $A(x)$, $A(x)$ is vacuously true.
+
+## Nesting quantifiers
+
+Quantifiers can be swapped inside a block, but not between blocks.
