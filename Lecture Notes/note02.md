@@ -246,3 +246,18 @@ is always true regardless of the predicate $A(x)$, $A(x)$ is vacuously true.
 ## Nesting quantifiers
 
 Quantifiers can be swapped inside a block, but not between blocks.
+
+$\exists y \forall x P(x, y) \Rightarrow \forall x \exists y P(x, y)$
+
+## Axiomatic set theory examples
+
+- extensionality axiom
+  $\forall A,B (\forall x (x \in A \leftrightarrow x \in B) \rightarrow A = B)$
+- empty set axiom
+  $\exists B \forall x (x \notin B)$
+- pairing axiom
+  $\forall u, v \exists B \forall x (x \in B \leftrightarrow x = u \vee x = v)$
+- union axiom
+  $\forall a, b \exists B \forall x (x \in B \leftrightarrow x \in a \vee x \in b)$
+- power-set axiom
+  $\forall a \exists B \forall x (x \in B \leftrightarrow x \subseteq a)$
