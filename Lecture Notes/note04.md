@@ -54,6 +54,7 @@ A partial function is a triple $(A, F, B)$ such that $F \subset A \times B$ is a
 ## Matrix representation of a relation
 
 Given finite sets $A = \lbrace a_1, a_2, \ldots, a_m \rbrace, B = \lbrace b_1, b_2, \ldots, b_n \rbrace$, and a relation $R \subset A \times B$, we define a $m \times n$ matrix $M_R = (m_{ij})$, where
+
 $$m_{ij} =
 \begin{cases}
 1 & \text{if $(a_i, b_i) \in R$}\\
@@ -89,13 +90,14 @@ Let $f: A \to B, g: B \to C$
 ## Relations as functions
 
 Given a relation $R \subset A \times B$, the associated boolean function is given by
+
 $$\phi_R: A \times B \to \lbrace \top, \bot \rbrace\\
 (x, y) \mapsto
 \lbrace
-\begin{array}{lc}
+\begin{cases}
 \top, & xRy\\
 \bot, & otherwise\\
-\end{array}
+\end{cases}
 $$
 
 $$\alpha_R: A \to \mathcal{P}(B)\\
