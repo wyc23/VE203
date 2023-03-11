@@ -90,9 +90,9 @@ Let $f: A \to B, g: B \to C$
 ## Relations as functions
 
 Given a relation $R \subset A \times B$, the associated boolean function is given by
+$$\phi_R: A \times B \to \lbrace \top, \bot \rbrace$$
 
-$$\phi_R: A \times B \to \lbrace \top, \bot \rbrace\\
-(x, y) \mapsto
+$$(x, y) \mapsto
 \lbrace
 \begin{cases}
 \top, & xRy\\
