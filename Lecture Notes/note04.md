@@ -70,7 +70,91 @@ Given a set $A$, the triple $(\mathcal{P}(A \times A), \circ, id_A)$ is a monoid
 
 ## Injection and surjection
 
+Given a function $F: A \to B$, with $domF = A$ and $im(F) \subset B$, then
+
+- $F$ is injective or one-to-one if $(\forall x, y \in A)(F(x) = F(y) \rightarrow x = y)$.
+- $F$ is surjective or onto if $im(F) = B$.
+- $F$ is bijective if it is both injective and surjective.
+
+Given a function $F: A \to B, A \neq \emptyset$, then
+
+- There exists a function $G: B \to A$ (a "left inverse") such that $G \circ F = id_A$ $\Leftrightarrow$ $F$ is one-to-one/injective.
+- There exists a function $G: B \to A$ (a "right inverse") such that $F \circ G = id_B$ $\Leftrightarrow$ $F$ is onto/surjective.
+
+Let $f: A \to B, g: B \to C$
+
+- If $g \circ f$ is injective, then $f$ is injective.
+- If $g \circ f$ is surjective, then $g$ is surjective.
+
 ## Relations as functions
+
+Given a relation $R \subset A \times B$, the associated boolean function is given by
+$$\phi_R: A \times B \to \lbrace \top, \bot \rbrace\\
+(x, y) \mapsto
+\lbrace
+\begin{array}{lc}
+\top, & xRy\\
+\bot, & otherwise\\
+\end{array}
+$$
+
+$$\alpha_R: A \to \mathcal{P}(B)\\
+x \mapsto \lbrace y \in B | xRy \rbrace$$
+
+$$\beta_R: B \to \mathcal{P}(A)\\
+x \mapsto \lbrace y \in A | xRy \rbrace$$
 
 ## Properties of relations
 
+For a binary relation $R$ on $A$,
+
+- reflexive: if $(\forall x \in A)(xRx)$.
+- irreflexive: if $(\forall x \in A)(xRx \rightarrow \bot)$
+- strongly connected or total: if $(\forall x, y \in A)(xRy \vee yRx)$.
+- transitive: if $(\forall x, y, z \in A)(xRy \wedge yRz \rightarrow xRz)$.
+- symmetric: if $(\forall x, y \in A)(xRy \rightarrow yRx)$.
+- anti-symmetric: if $(\forall x, y \in A)(xRy \wedge yRx \rightarrow x = y)$.
+- asymmetric: if $(\forall x, y \in A)(xRy \wedge yRx \rightarrow \bot)$.
+
+## Important relations
+
+### non-strict partial order
+
+- reflexive
+- anti-symmetric
+- transitive
+
+### strict partial order
+
+- irreflexive
+- asymmetric
+- transitive
+
+### equivalence
+
+- reflexive
+- symmetric
+- transitive
+
+## Equivalence class
+
+Given an equivalence relation on $A$, the equivalence class containing $x$ is the set
+$$[x]_R := \lbrace t \in A | xRt \rbrace$$
+
+Given an equivalence relation $R$ on $A$, then for $x, y \in A$,
+$$[x]_R = [y]_R \Leftrightarrow xRy$$
+
+## Partition
+
+A partition $\Pi$ of a set $A$ is a set of nonempty subsets of $A$ that is disjoint and exhaustive,
+
+- $(\forall a, b \in \Pi)(a \neq b \rightarrow a \cap b = \emptyset)$;
+- $\bigcup \Pi = A$.
+
+Given an equivalence relation $R$ on $A$, then the set $\lbrace [x]_R | x \in A \rbrace$ of all equivalence classes is a partition of A.
+
+## Quotient set
+
+Given an equivalence relation $R$ on $A$, the quotient set is given by
+$$A/R := \lbrace [x]_R | x \in A\rbrace$$
+where $A/R$ is read "A modulo R".
