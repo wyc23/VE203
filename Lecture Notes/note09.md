@@ -4,7 +4,7 @@ $A(x) = \sum_{n \ge 0}a_n x^n$
 
 ## Properties
 
-- equality:$$A(x) = B(x) \Leftrightarrow a_n = b_n$$
+- equality: $$A(x) = B(x) \Leftrightarrow a_n = b_n$$
 - addition: $$A(x) + B(x) = \sum_{n \ge 0}(a_n + b_n)x^n$$
 - multiplication: $$A(x)B(x) = \sum_{n \ge 0}(\sum_{i = 0}^{n} a_ib_{n - i})$$
 
