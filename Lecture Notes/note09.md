@@ -4,9 +4,9 @@ $A(x) = \sum_{n \ge 0}a_n x^n$
 
 ## Properties
 
-- equality: $A(x) = B(x) \Leftrightarrow a_n = b_n$ for all $n \in \mathbb{N}$
-- addition: $A(x) + B(x) = \sum_{n \ge 0}(a_n + b_n)x^n$
-- multiplication: $A(x)B(x) = \sum_{n \ge 0}(\sum_{i = 0}^{n} a_ib_{n - i})$
+- equality:$$A(x) = B(x) \Leftrightarrow a_n = b_n$$
+- addition: $$A(x) + B(x) = \sum_{n \ge 0}(a_n + b_n)x^n$$
+- multiplication: $$A(x)B(x) = \sum_{n \ge 0}(\sum_{i = 0}^{n} a_ib_{n - i})$$
 
 ## Inverse
 
@@ -17,7 +17,9 @@ A formal power series $A(x)$ is invertible iff $a_0 \neq 0$
 
 ### example
 
-$A(x) = \sum_{n \ge 0}x^n, B(x) = 1 - x$, we have $A(x)B(x) = 1$.
+For power series
+
+$$A(x) = \sum_{n \ge 0}x^n, B(x) = 1 - x,$$ we have $A(x)B(x) = 1$.
 
 $$\frac{1}{1 - x} = \sum_{n \ge 0}x^n$$
 
