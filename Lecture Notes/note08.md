@@ -22,7 +22,7 @@ $\chi (t) = t^d - c_1 t^{d - 1} - c_2 d^{d - 2} - \dots - c_{d - 1} t - c_d$.
 Let $r_1, r_2, \dots, r_d$ be the roots of $\chi$.
 
 - all $r_1, r_2, \dots, r_d$ are distinct
-  there exist $\alpha_1, \alpha_2, \dots, \alpha_d$ such that 
+  there exist $\alpha_1, \alpha_2, \dots, \alpha_d$ such that
   $$a_n = \alpha_1 r_1^n + \alpha_2 r_2^n + \dots + \alpha_d r_d^n$$
 - the root $r_i$ appears with the multiplicity $m_i$
   the solution contains
