@@ -6,7 +6,7 @@ $A(x) = \sum_{n \ge 0}a_n x^n$
 
 - equality: $A(x) = B(x) \Leftrightarrow a_n = b_n$ for all $n \in \mathbb{N}$
 - addition: $A(x) + B(x) = \sum_{n \ge 0}(a_n + b_n)x^n$
-- multiplication: $A(x)B(x) = \sum_{n \ge 0}(\sum_{i = 0}^n a_ib_{n - i})$
+- multiplication: $A(x)B(x) = \sum_{n \ge 0}(\sum^{n}_{i = 0} a_ib_{n - i})$
 
 ## Inverse
 
